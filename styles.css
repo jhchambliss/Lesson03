@@ -1,0 +1,168 @@
+/* Color palette
+
+#F2F4F3 off-white slight silver
+#242F40 gunmetal hint of navy
+#218380 celadon green hint of teal
+#FF5A5F sizzling red more hot pink
+#9D695A blast off bronze def brown
+
+*/
+
+/* Global style
+-------------------------- */
+/* Box-sizing Fix*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    color: #242f40;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+img {
+    width: 300px;
+}
+a {
+    color: #8fc4c2;
+    text-decoration: none;
+}
+a:hover {
+    color: #225352;
+}
+h1 {
+    font-size: 100px;
+}
+h2 {
+    font-size: 45px;
+}
+h1, h2 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    margin: 0;
+}
+.content-wrap {
+    max-width: 900px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+h3 {
+    margin-bottom: 0;
+}
+.item-details h3 + p {
+    font-style: italic;
+}
+.item-details h3 ~ p {
+    margin: 0;
+}
+.divider > section {
+    border-bottom: 1px dashed #242F40;
+    padding: 25px 0;
+}
+.divider > section:last-of-type {
+    border-bottom: none;
+}
+
+/* Profile
+-------------------------- */
+header {
+    background:#218380;
+    color: #F2F4F3;
+    text-align: center;
+    text-align: justify;
+}
+
+
+/* Project
+-------------------------- */
+.projects {
+    background-color: #FF5A5F;
+}
+.projects a {
+    color: #F2F4F3;
+}
+.projects a:hover {
+    color: #225352;
+}
+.projects .btn {
+    color: #F2F4F3;
+    background: #242F40;
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.projects .btn:hover {
+    background: rgba(36, 47, 64, 80%);
+}
+.project-item {
+    overflow: hidden;
+}
+
+/* Work Experience
+-------------------------- */
+.work {
+    background-color: #F2F4F3;
+}
+
+/* Education
+-------------------------- */
+.education {
+    background: url(books.png) no-repeat center;
+    background-position: top right;
+}
+.education p:last-of-type {
+    width: 50%;
+}
+
+/* Contact Info
+-------------------------- */
+footer {
+    background-color: #9D695A;
+    color: #F2F4F3;
+}
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Contact Info
+-------------------------- */
+@media screen and (min-width: 750px) {
+    
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }    
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    footer {
+        text-align: center;
+    }
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+    .contact-list a {
+        padding: 15px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    h1 {
+        font-size: 75px;
+    }
+    h2 {
+        font-size: 35px;
+        line-height: 1;
+    }
+}
