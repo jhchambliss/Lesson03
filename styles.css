@@ -166,4 +166,8 @@ footer {
         font-size: 35px;
         line-height: 1;
     }
+    .education {
+        background: url(pencils.jpg) no-repeat center/cover;
+        background-position: top right;
+    }
 }
