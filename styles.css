@@ -88,7 +88,7 @@ h3 {
   }
   .project-description p:hover {
       overflow: visible;
-      margin-left: 30px;
+      background-color: #fff;
   }
 .item-details h3 + p {
     font-style: italic;
@@ -167,7 +167,7 @@ footer {
     padding: 0;
 }
 
-/* Contact Info
+/* Media Queries
 -------------------------- */
 @media screen and (min-width: 750px) {
     
@@ -175,6 +175,9 @@ footer {
         float: left;
         margin-right: 20px;
     }    
+    .project-description p:hover {
+        margin-left: 320px;
+    }
     .job-item {
         display: grid;
         grid-template-columns: 1fr 2fr;
