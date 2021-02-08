@@ -88,13 +88,13 @@ h3 {
     overflow: hidden;
     padding-right: 1rem;
 }
-.project-description::before {
+.project-description p::before {
     position: absolute;
     content: "...";
     inset-block-end: 0; /* "bottom" */
     inset-inline-end: 0; /* "right" */
   }
-  .project-description::after {
+  .project-description p::after {
     content: "";
     position: absolute;
     inset-inline-end: 0; /* "right" */
