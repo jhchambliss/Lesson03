@@ -46,8 +46,20 @@ h1 {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.fixed {
+    position: fixed;
+    background-color: #218380;
+    width: 100%;
+    z-index: 90;
+    top: 0;
+    left: 0;
+    padding-left: 50px;
+}
 h2 {
     font-size: 45px;
+}
+h2.next {
+    margin-top: 80px;
 }
 h1, h2 {
     font-family: 'Amatic SC', cursive;
