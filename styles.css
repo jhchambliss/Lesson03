@@ -23,10 +23,39 @@ body {
     color: #242f40;
     margin: 0;
     padding: 0;
-/* -- Modifideied font as per assignment -- */
+/* -- Modified font as per assignment -- */
     font-family: 'Barlow', sans-serif;
     font-size: 15px;
     line-height: 1.5;
+}
+nav ul {
+    list-style-type: none;
+    text-align: left;
+}
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 30px;
+}
+ul li ul {
+    position: absolute;
+    left: -999em; /* I originally set display to "none" then I saw the note re accessibility issues */
+    margin-left: -30px;
+    padding: 0;
+}
+ul li:hover ul {
+    display: block;
+    left: 0;
+    background-color: #218380;
+    border: 1px solid #242f40;
+    margin: 5px 0;
+    padding: 5px;
+}
+ul li ul li {
+    display: block;
+    padding: 5px;
+    margin: 0;
+    width: 100%;
 }
 img {
     width: 300px;
@@ -43,6 +72,7 @@ h1 {
     font-size: 100px;
     /* -- Heading with styled text as per assignment (color sample 1 of 2) -- */
     background: -webkit-linear-gradient(#eee, #FF5A5F);
+    /* w3c doesn't recognize "text" as a value for background-clip, but MDN ... and the browser does, so go figure */
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -64,7 +94,7 @@ h2.next {
     margin-top: 80px;
 }
 h1, h2 {
-    /* -- Modifideied font as per assignment -- */
+    /* -- Modified font as per assignment -- */
     font-family: 'Amatic SC', cursive;
     font-weight: 400;
     margin: 0;
@@ -88,6 +118,7 @@ h3 {
     overflow: hidden;
     padding-right: 1rem;
 }
+/* -- this section throws errors in the w3c css checker because it uses elements w3schools doesn't recognize, but MDN does re. CSS properties and values  */
 .project-description p::before {
     position: absolute;
     content: "...";
